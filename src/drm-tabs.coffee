@@ -3,18 +3,19 @@
 ###############################################################################
 "use strict"
 
+$ = jQuery
 class @DrmTabs
     constructor: (@holder = $('div.drm-tabs'), @activeClass = 'active', @speed = 300) ->
         self = @
-        @nav = self.holder.find 'nav'
-        @tabs = self.holder.find 'section'
-        hash = window.location.hash
+        self.nav = self.holder.find 'nav'
+        self.tabs = self.holder.find 'section'
+        _hash = window.location.hash
 
         self.tabs.hide()
 
-        if hash
-            self.holder.find("section#{hash}").show()
-            self.nav.find("a[href='#{hash}']").addClass self.activeClass
+        if _hash
+            self.holder.find("section#{_hash}").show()
+            self.nav.find("a[href='#{_hash}']").addClass self.activeClass
         else
             self.nav.find('a[href^="#"]').first().addClass self.activeClass
             self.tabs.first().show()
@@ -29,13 +30,13 @@ class @DrmTabs
 
     changeTab: (target) =>
         tab = @holder.find "section#{target}"
-        currentTab = @holder.find('section').not ':hidden'
-        currentId = currentTab.attr 'id'
+        _currentTab = @holder.find('section').not ':hidden'
+        _currentId = _currentTab.attr 'id'
 
-        currentTab.fadeOut @speed, ->
+        _currentTab.fadeOut @speed, ->
             tab.fadeIn @speed
-        @nav.find("a[href^='##{currentId}']").removeClass @activeClass
-        window.location.hash = target   
+        @nav.find("a[href^='##{_currentId}']").removeClass @activeClass
+        window.location.hash = target
         @nav.find("a[href='#{target}']").addClass @activeClass
 
 new DrmTabs()
