@@ -1,16 +1,21 @@
-# DRM Tabs
+# ELR Tabs
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
-A jQuery content tabs
-Requires jQuery
+A jQuery component
 
-## Features:
+### Dependencies:
 
-## Usage:
++ jQuery
 
-### Initialize:
+### Features:
 
-#### Options:
+### Config:
 
-#### Examples:
+### Example Usage:
+
+#### Sample html
+
+###License
+
+ELR-Tabs is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
