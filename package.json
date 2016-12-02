@@ -1,14 +1,11 @@
 {
   "name": "elr-tabs",
-  "version": "1.0.2",
   "description": "a basic content tabs",
-  "main": "dist/elr-tabs.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/elr-utilities/elr-tabs.git"
-  },
-  "scripts": {
-    "build": "build"
+  "version": "1.0.2",
+  "author": "Elizabeth Rogers",
+  "bugs": {
+    "url": "https://github.com/Beth3346/elr-tabs",
+    "email": "beth@elizabeth-rogers.com"
   },
   "dependencies": {
     "babel-runtime": "^6.0.0",
@@ -23,5 +20,18 @@
     "gulp-jshint": "^2.0.1",
     "gulp-sourcemaps": "^2.1.1",
     "jshint": "^2.9.3"
+  },
+  "homepage": "http://www.elizabeth-rogers.com/elr-utilities/js-tabs.html",
+  "keywords": [
+    "javascript, jquery, tabs, ui"
+  ],
+  "license": "SEE LICENSE IN LICENSE.md",
+  "main": "dist/elr-tabs.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elr-utilities/elr-tabs.git"
+  },
+  "scripts": {
+    "build": "build"
   }
 }
