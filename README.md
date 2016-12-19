@@ -1,4 +1,9 @@
-# elr-tabs 
+# elr-tabs
+
+[![Build Status](https://travis-ci.org/Beth3346/elr-tabs.svg?branch=master)](https://travis-ci.org/Beth3346/elr-tabs)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![codecov](https://codecov.io/gh/Beth3346/elr-tabs/branch/master/graph/badge.svg)](https://codecov.io/gh/Beth3346/elr-tabs)
+[![npm](https://img.shields.io/npm/dm/elr-tabs.svg?style=flat)]()
 
 a basic content tabs
 
